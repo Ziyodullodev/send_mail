@@ -1,0 +1,11 @@
+
+<form method="POST">{% csrf_token %}
+<h3> Message title </h3><br>
+<input type="text" name="title">
+<h3> Message </h3><br>
+<input type="text" name="message" >
+<h3> to gmail </h3><br>
+<input type="text" name="email" placeholder="to gmail">
+<button type="submit">Submit</button>
+
+<p> {{ action }}</p>
